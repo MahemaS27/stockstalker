@@ -19,10 +19,24 @@ alpaca.getAccount().then((account) => {
 })
 
 app.get("/api/orders", (req,res) => {
-  let allOrders = [];
   alpaca.getOrders({}).then(orders => {
     res.send(orders)
   })
+});
+
+app.delete('/api/orders/:id', (req, res) => {
+  alpaca.cancelOrder(req.params.id).then(res.send({deleted: true}))
+});
+
+app.post("/api/orders/create/:symbol/:qty", (req, res) => {
+  console.log("create order", req.params)
+  alpaca.createOrder({
+    symbol: req.params.symbol,
+    qty: req.params.qty,
+    side: 'buy',
+    type: 'market',
+    time_in_force: 'day'
+  }).then(order => res.send(order))
 });
 
 app.use(express.static(__dirname));
