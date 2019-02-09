@@ -3,34 +3,28 @@ import "./alpacatable.css"
 
 type Order = {
     id: String,
-    ticker: String
+    symbol: String
 }
 
-type AlpacaTableProps = {
-    orders: Order[]
-}
+class AlpacaTable extends Component<{}, {orders: Order[]}> {
 
-class AlpacaTable extends Component<AlpacaTableProps> {
+    state = { orders: [] }
 
-    static defaultProps = {
-        orders: [
-            { id: 'test', ticker: 'aapl' },
-            { id: 'test2', ticker: 'gpro' }
-        ]
+    getOrders = () => {
+        fetch('/api/orders')
+            .then(res => res.json())
+            .then(orders => this.setState({ orders }));
     }
 
-    constructor() {
-        let orders: Order[] = [];
-        let props = {orders: orders};
-        super(props);
-
+    componentDidMount() {
+        this.getOrders();
     }
 
     renderOrder(order: Order) {
         return (
             <tr>
                 <td>{ order.id }</td>
-                <td>{ order.ticker }</td>
+                <td>{ order.symbol }</td>
             </tr>
         );
     }
@@ -42,7 +36,7 @@ class AlpacaTable extends Component<AlpacaTableProps> {
                     <th>ID</th>
                     <th>Ticker</th>
                 </tr>
-                {this.props.orders.map(this.renderOrder)}
+                {this.state.orders.map(this.renderOrder)}
             </table>
         )
     }

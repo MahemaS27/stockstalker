@@ -1,24 +1,20 @@
 {
-  "name": "stockstalker",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd backend && node index.js\" \"cd frontend && npm start\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"node index.ts\" \"cd client && npm start\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stockstalker/stockstalker.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stockstalker/stockstalker/issues"
-  },
-  "homepage": "https://github.com/stockstalker/stockstalker#readme",
   "dependencies": {
-    "concurrently": "^4.1.0"
+    "@alpacahq/alpaca-trade-api": "^1.0.2",
+    "@types/node": "^10.12.24",
+    "concurrently": "^4.1.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "typescript": "^3.3.3"
   }
 }
