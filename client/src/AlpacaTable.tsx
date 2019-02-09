@@ -21,7 +21,7 @@ class AlpacaTable extends Component<{}, {orders: Order[]}> {
             let orders: Order[] = this.state.orders
             orders.push(order)
             this.setState({ orders });
-            alert("Order " + order.id + " created.")
+            // alert("Order " + order.id + " created.")
         })
     }
 
@@ -31,7 +31,7 @@ class AlpacaTable extends Component<{}, {orders: Order[]}> {
             return val.id != order.id
         });
         this.setState({ orders });
-        alert("Order deleted.")
+        // alert("Order deleted.")
     }
 
     componentDidMount() {
