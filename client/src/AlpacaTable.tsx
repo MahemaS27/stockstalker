@@ -4,11 +4,12 @@ import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
 import { Order, createOrder, deleteOrder } from './alpacalib';
 
-class AlpacaTable extends Component<{}, {orders: Order[]}> {
+class AlpacaTable extends Component<{}, {orders: Order[], ticker : String}> {
 
-    state = { orders: [] }
+    state = { orders: [], ticker: ""}
 
     getOrders = () => {
         fetch('/api/orders')
@@ -17,7 +18,7 @@ class AlpacaTable extends Component<{}, {orders: Order[]}> {
     }
 
     makeOrder = (e: any) => {
-        createOrder("AAPL", 2).then((order: Order) => {
+        createOrder(this.state.ticker, 2).then((order: Order) => {
             let orders: Order[] = this.state.orders
             orders.push(order)
             this.setState({ orders });
@@ -50,12 +51,20 @@ class AlpacaTable extends Component<{}, {orders: Order[]}> {
         );
     }
 
+    updateTicker = (event: any) => {
+        let ticker = event.target.value;
+        this.setState({ticker})
+    }
+
     render() {
         return (
             <div>
                 <Row className="align-middle">
                     <Col>
-                        <Button variant="success" onClick={this.makeOrder}>Create AAPL Order</Button>
+                        <Form onSubmit={this.makeOrder}>
+                            <Form.Control placeholder="Symbol" onChange={this.updateTicker}></Form.Control>
+                            <Button variant="success" type="submit">Create Order</Button>
+                        </Form>
                     </Col>
                 </Row>
                 <Row>
