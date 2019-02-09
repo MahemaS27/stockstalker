@@ -29,23 +29,15 @@ class AlpacaTable extends Component<{}, {orders: Order[]}> {
         );
     }
 
-    renderOrders() {
+    render() {
         return (
-            <table >
+            <table>
                 <tr>
                     <th>ID</th>
                     <th>Ticker</th>
                 </tr>
                 {this.state.orders.map(this.renderOrder)}
             </table>
-        )
-    }
-
-    render() {
-        return (
-            <div className="AlpacaTable">
-                { this.renderOrders() }
-            </div>
         );
     }
 }
