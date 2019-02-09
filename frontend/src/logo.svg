@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="197.95638"
+     inkscape:cy="207.13609"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1876"
+     inkscape:window-height="1006"
+     inkscape:window-x="20"
+     inkscape:window-y="50"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-164.70832)">
+    <circle
+       id="path3713"
+       cx="66.145836"
+       cy="230.85416"
+       style="stroke-width:0.94524801;fill:#008000"
+       r="66.145836" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:111.27628326px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#002f00;fill-opacity:1;stroke:none;stroke-width:2.78190684"
+       x="-102.73872"
+       y="275.4707"
+       id="text3729"
+       transform="matrix(0.90865817,-0.47786119,0.52753747,0.82309314,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3727"
+         x="-102.73872"
+         y="275.4707"
+         style="fill:#002f00;fill-opacity:1;stroke-width:2.78190684">$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="34.768898"
+       y="229.02953"
+       id="text3717"><tspan
+         sodipodi:role="line"
+         x="34.768898"
+         y="229.02953"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.22222137px;font-family:Acme;-inkscape-font-specification:Acme;stroke-width:0.26458332;fill:#ffffff;"
+         id="tspan3719">Stock</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:24.69444466px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="15.65129"
+       y="254.0289"
+       id="text3725"><tspan
+         sodipodi:role="line"
+         id="tspan3723"
+         x="15.65129"
+         y="254.0289"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.69444466px;font-family:'Sansita One';-inkscape-font-specification:'Sansita One';stroke-width:0.26458332;fill:#ffffff;">STALKER</tspan></text>
+  </g>
+</svg>
