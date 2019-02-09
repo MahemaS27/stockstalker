@@ -44,6 +44,7 @@ class AlpacaTable extends Component<{}, {orders: Order[], ticker : String}> {
             <tr>
                 <td>{ order.id }</td>
                 <td>{ order.symbol }</td>
+                <td>{ order.type }</td>
                 <td>
                     <Button variant="danger" onClick={this.cancelOrder(order)}>Cancel order</Button>
                 </td>
@@ -73,6 +74,7 @@ class AlpacaTable extends Component<{}, {orders: Order[], ticker : String}> {
                             <tr>
                                 <th>ID</th>
                                 <th>Ticker</th>
+                                <th>Type</th>
                                 <th>Buttons</th>
                             </tr>
                             {this.state.orders.map(this.renderOrder)}

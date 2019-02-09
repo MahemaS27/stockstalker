@@ -1,6 +1,7 @@
 export type Order = {
     id: String,
-    symbol: String
+    symbol: String,
+    type: String
 }
 
 export async function deleteOrder(id: String): Promise<any> {
