@@ -2,9 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "concurrently \"node index.ts\" \"cd client && npm start\"",
+    "start": "node index.ts",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
@@ -15,6 +15,7 @@
     "concurrently": "^4.1.0",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
+    "path": "^0.12.7",
     "typescript": "^3.3.3"
   }
 }
