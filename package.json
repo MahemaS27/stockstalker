@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "node index.ts",
+    "local": "concurrently \"npm start\" \"cd client && npm start\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
